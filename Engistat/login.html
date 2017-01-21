@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+
+<center>
+ <table border="1" >
+  <tr> <td> <form name = "loginform" method="POST" action="login.php" onsubmit="return(regvalidate())">
+   <table> 
+   <tr> <td> User Name:</td> <td><input type = "text" name="unametxt" /><br/> </td> </tr> 
+   </tr> 
+   <tr> <td> Password : </td> <td> <input type = "password" name="pwdtxt" /> <br/> </td> </tr> </tr>
+     
+    </table> <font color='red'> <DIV id="une"> </DIV> </font> <input type = "submit" value="Login   " /> 
+    <input type="button" onclick="location.href='password.html';" value="Forgot password" />
+
+    </form> </td> </th> </tr> </table>
+     </tr> </table> </tr> 
+
+     <SCRIPT type="Text/JavaScript"> function regvalidate()
+      {   
+      
+        if(document.loginform.unametxt.value=="")  
+         {   document.getElementById('une').innerHTML = "User name field should not be empty";   loginform.unametxt.focus();   
+     return(false);  } 
+   if(document.loginform.pwdtxt.value=="")   
+    {   document.getElementById('une').innerHTML = "Please type a password";   loginform.pwdtxt.focus();   return(false);    }
+         else    
+         	{    return(true);    } } </SCRIPT> </td> </tr> </table> </center> 
+         </body>
+</html>
